@@ -1,4 +1,5 @@
 # it's incredibly slow
+# use wasd to move
 import pygame
 import math
 
@@ -8,7 +9,8 @@ pygame.init()
 window_size = (1366, 768)
 
 # Create the window
-screen = pygame.display.set_mode(window_size)
+#screen = pygame.display.set_mode(window_size)
+screen = pygame.display.set_mode(window_size, pygame.HWSURFACE)
 
 # Set the title of the window
 pygame.display.set_caption("RayTracing with Camera Movement")
